@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>CONNECTOLEAD</title>
+		<!-- Main Template CSS File -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Render All Elements Normally -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- Font Awesome Library -->
+		<link rel="stylesheet" href="css/all.min.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+			rel="stylesheet"
+		/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	</head>
+    <style>
+        /* Start Variables */
+:root {
+    --main-color: #680f0f;
+    --secondary-color: #680f0f;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start Components */
+  .special-heading {
+    color: #023468;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: -10px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #802323;
+  }
+  @media (max-width: 767px) {
+    .special-heading {
+      font-size: 60px;
+    }
+    .special-heading + p {
+      margin-top: -20px;
+    }
+  }
+  /* End Components */
+  /* Start Header */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: #f8f9fa; 
+    padding: 20px;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 13px;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .logo-text {
+    display: flex;
+    align-items: center;
+  }
+  .text {
+    margin-left: 15px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+    color: #680f0f;
+    margin-bottom: 3px;
+  }
+
+  .text p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin-left: 50px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #680f0f;
+    font-weight: 700;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #680f0f; /* Change to desired hover color */
+  }
+
+  .nav-link.active {
+    color: #680f0f; /* Active link color */
+  }
+
+
+  /* End Header */
+  /* Start Landing Section */
+  .landing {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+  }
+  .flyinTxtCont {
+  text-transform: lowercase;
+  }
+
+  .landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+  }
+  .landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+  }
+  .landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+  }
+  /* End Landing Section */
+  /* Start Features */
+  .features {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+  }
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .features .feat {
+    padding: 20px;
+    text-align: center;
+  }
+  .features .feat i {
+    color: var(--main-color);
+  }
+  .features .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  .features .feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+  }
+/* End Features */
+/* Start Services */
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+
+.services .services-content .card {
+  background-color: #ffffff; /* White background inside the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid; /* Thicker border */
+  border-image: linear-gradient(to right,#680f0f, #0056b3) 1; /* Maroon and blue mix border */
+  border-radius: 20px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services .services-content .card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.services .services-content .card img {
+  max-width: 40%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.services .services-content .card .info {
+  padding: 20px;
+  text-align: center;
+}
+
+.services .services-content .card .info h3 {
+  margin: 0;
+  color: #0056b3; /* Default heading color (blue) */
+  transition: color 0.3s ease;
+}
+
+.services .services-content .card:hover .info h3 {
+  color: #680f0f; /* Maroon on hover */
+}
+
+.services .services-content .card .info h3 a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.services .services-content .card .info p {
+  color: #120808;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+/* End Services */
+
+/* Start Portfolio */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.portfolio .container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.portfolio .portfolio-content {
+  display: flex;
+  flex-wrap: wrap; /* Enables responsive wrapping */
+  justify-content: center;
+  gap: 30px; /* Space between cards */
+  margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* Limits card width */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.portfolio .portfolio-content .card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio .portfolio-content .card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.portfolio .portfolio-content .card .info {
+  padding: 15px;
+  width: 100%;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.portfolio .portfolio-content .card .info p {
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+/* End Portfolio */
+
+/* Start About */
+  .about {
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+  }
+  .about .about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .about .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .about .about-content .image {
+    position: relative;
+    width: 250px;
+    height: 400px;
+  }
+  @media (max-width: 991px) {
+    .about .about-content .image {
+      margin: 0 auto 60px;
+    }
+  }
+  .about .about-content .image::before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+  }
+  .about .about-content .image::after {
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    right: -150px;
+  }
+  @media (max-width: 991px) {
+    .about .about-content .image::before,
+    .about .about-content .image::after {
+      display: none;
+    }
+  }
+  .about .about-content .image img {
+    max-width: 100%;
+  }
+  .about .about-content .text {
+    flex-basis: calc(100% - 500px);
+  }
+  .about .about-content .text p {
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+  .about .about-content .text hr {
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+  }
+  
+  /* End About */
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 20px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #023468;
+}
+
+.card h3 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.card h3 a:hover {
+  color: #f57c00;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+  /* team member start */
+  .team-member {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+  }
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .team-member {
+    text-align: center;
+     max-width: 200px;
+  }
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .subheading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 30px 0 15px;
+  color: #333;
+}
+
+  /* Start Contact */
+  .contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+  }
+  .contact .info {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+  }
+  .contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+  }
+  .contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  .contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .contact .info .social i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+  }
+  .social-links {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #680f0f;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #555;
+}
+
+.social-links i {
+  font-size: 20px;
+}
+
+  @media (max-width: 767px) {
+    .contact .info .label,
+    .contact .info .link {
+      font-size: 25px;
+    }
+  }
+  
+  /* End Contact */
+  /* Start Footer */
+  .footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer span {
+    font-weight: bold;
+    color: var(--main-color);
+  }
+  /* End Footer */
+    </style>
+	<body>
+		<!-- Start Header -->
+		<div class="header">
+			<div class="container">
+				<div class="logo-text">
+          <img src="./Images/logo0.png" alt="Logo" class="logo">
+          <div class="text">
+            <h1>ConnecToLead</h1>
+            <p>Empowering to Future</p>
+          </div>
+        </div>
+				<div class="links">
+					<ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#meet-the-team">Meet the team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.php">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.php">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.php">Login</a>
+            </li> 
+          </ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Header -->
+		<!-- Start Landing Section -->
+    <section>
+      <div class="cater3-movingBG">
+        <div class="flyinTxtCont">
+          <div class="flyIn lineOne" style="text-transform: uppercase;">CONNECTOLEAD</div>
+          <div class="flyIn lineTwo" style="text-transform:capitalize;">Empowering</div>
+          <div class="flyIn lineThree" style="text-transform: lowercase;">to future.</div>
+          <div class="flyIn lineFour" style="text-transform: capitalize;">Womens. Parents. Senior citizens. Childrens.</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <style>
+      body {
+        background:#ffffff;
+      }
+      .cater3-movingBG {
+          height: 100%;
+          background-image: url(./Images/landing\ background.jpg.jpg);
+          background-size: 125%;
+          background-repeat: repeat-x;
+          animation: animatedBackground 15s linear alternate infinite;
+      }
+      
+      @keyframes animatedBackground {
+          0% { background-position: 0 0; }
+          50% { background-position: 50% 0; }
+          100% { background-position: 0 0; }
+      }
+      
+      .flyinTxtCont {
+          height: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          padding-bottom: 10%;
+            margin-left: 2em;
+      }
+      .flyIn {
+          color:#a10c0c;
+          font-family:'Raleway';
+          text-transform:uppercase;
+          line-height:1.2em;
+          position:relative;
+        text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
+      }
+      .lineOne {
+        transition-delay:.2s; 
+        transition:.4s ease in;
+        animation: txtFlyIn .3s linear;
+      }
+      .lineTwo {
+          transition-delay:.4s; 
+          transition:.6s ease in;
+          animation: txtFlyIn .6s linear;
+      }
+      .lineThree {
+          transition-delay:.6s; 
+          transition:.8s ease in;
+          animation: txtFlyIn .9s linear;
+      }
+      .lineOne, .lineTwo, .lineThree {
+          font-size:110px;
+          font-weight: bold;
+          letter-spacing: 3px;
+        }
+      .lineFour {
+          transition-delay:2s; 
+          transition:2s ease in;
+          animation: fadeIn 2s linear;
+          width: 100%;
+          background-color:rgba(255,255,255,0.9);
+          display:inline-block;
+          color:#000;
+          box-size:border-box;
+          max-width:63%;
+          max-width: 22em;
+          font-size: 32px;
+          padding: .2em .5em;
+          margin-top: 30px;
+      }
+      @keyframes fadeIn{
+          0% { opacity:0;}
+          100% { opacity:1;}
+      }
+      @keyframes txtFlyIn{
+          0% { transform:translateX(-100%); }
+          100% { transform:translateX(0%); }
+      }
+    </style>
+    
+		<!-- End Landing Section -->
+		<!-- Start Features -->
+		<div class="features">
+			<div class="container">
+				<div class="feat">
+					<i class="fas fa-magic fa-3x"></i>
+					<h3>Who we are</h3>
+					<p>
+						ConnecToLead empowers individuals by providing inclusive and accessible
+             technology education through AI-driven learning and tailored workshops.
+					</p>
+				</div>
+				<div class="feat">
+					<i class="far fa-gem fa-3x"></i>
+					<h3>Our Mission</h3>
+					<p>
+						We aim to bridge the digital divide by equipping students, parents, women,
+             and seniors with essential tech skills for personal and professional growth.
+					</p>
+				</div>
+				<div class="feat">
+					<i class="fas fa-globe-asia fa-3x"></i>
+					<h3>Our Vision</h3>
+					<p>
+						We strive to create an inclusive, connected future by fostering community engagement, peer learning, and continuous innovation in digital education.
+					</p>
+				</div>
+			</div>
+		</div>
+<!-- End Features -->
+<!-- Start Services -->
+<div class="services" id="services">
+  <div class="container">
+    <h2 class="special-heading">Services</h2>
+    <p>Smart Services for a Smarter Tomorrow.</p>
+    <div class="services-content">
+
+      <div class="card">
+        <img src="./Images/students.jpg.jpeg" alt="Tech Education for Students" />
+        <div class="info">
+          <h3><a href="Techtraining.html">Tech Education for Students</a></h3>
+          <p>
+            We provide interactive courses, workshops, and personalized learning plans to help students build essential tech skills, from coding to graphic design, empowering them to thrive in the digital age.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Images/parents.jpg.jpeg" alt="Parent's Tech Hub" />
+        <div class="info">
+          <h3><a href="parentshub.html">Parent's Tech Hub</a></h3>
+          <p>
+            Our platform offers tailored workshops and resources for parents to navigate emerging technologies, with community forums for sharing experiences and advice.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Images/women.jpg.jpeg" alt="Women Health and Legal Support" />
+        <div class="info">
+          <h3><a href="women.html">Women Health and Legal Support</a></h3>
+          <p>
+            We provide access to legal resources, health tracking tools, wellness guidance, and mentorship opportunities, empowering women to take control of their personal and professional lives.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Images/senior.jpg.jpeg" alt="Senior Engagement" />
+        <div class="info">
+          <h3><a href="seniorcitizen.html">Senior Engagement</a></h3>
+          <p>
+            Through community-building features, local event discovery, and digital literacy workshops, we help seniors enhance their tech skills and engage in meaningful social connections.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Services -->
+<!-- Start Portfolio -->
+<div class="portfolio" id="portfolio">
+  <div class="container">
+    <h2 class="special-heading">Portfolio</h2>
+    <p>Linking Minds, Building Futures.</p>
+
+    <div class="portfolio-content">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./Images/Workshop.jpg.jpeg" alt="Falconhouse Workshop" />
+        <div class="info">
+          <h3>Empowering Students at Falconhouse Grammar School</h3>
+          <p>
+            We recently conducted workshops at Falconhouse Grammar School with the aim of providing tech training to students. Our goal is to empower them with essential digital skills, preparing them for the rapidly evolving tech landscape. By offering hands-on experience, we hope to inspire the next generation of innovators.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./Images/workshop2.jpg" alt="Canva Session" />
+        <div class="info">
+          <h3>Empowering Students – Online Canva Session</h3>
+          <p>
+           . The aim was to equip young learners with practical digital design skills and introduce them to user-friendly creative tools. By offering hands-on guidance, we hope to empower the next generation with confidence and creativity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Portfolio -->
+
+		<!-- Start About -->
+		<div class="about" id="about">
+			<div class="container">
+				<h2 class="special-heading">About</h2>
+				<p>Here to Connect, Ready to Empower.</p>
+				<div class="about-content">
+					<div class="image">
+						<img src="./Images/about image.jpg.webp" alt="" />
+					</div>
+					<div class="text">
+            <h3>Background</h3>
+						<p>ConnecToLead bridges the digital divide by empowering individuals; parents, women, seniors and students with essential skills through inclusive and accessible technology. Our AI-powered platform and tailored workshops provide engaging learning experiences, fostering community connection and digital empowerment for all.</p>
+						</p>
+						<hr/>
+            <h3>Values</h3>
+						<p>
+							At ConnecToLead, we prioritize inclusivity, innovation, and empowerment. Our mission is to ensure everyone has access to opportunities for personal and professional growth. We focus on creating accessible, user-friendly learning experiences that encourage community engagement and collaboration.
+						</p>
+            <hr/>
+            <h3>Goals</h3>
+						<p>Our goal is to bridge the digital divide by providing tech education to students, parents, women, and seniors, empowering them with the skills needed to thrive in a tech-driven world. We are committed to fostering peer-to-peer learning, community engagement, and continuous innovation. By aligning with global sustainable development goals, we aim to create an inclusive and connected future.</p>           
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End About -->
+    <div id="meet-the-team" class="section">
+      <div class="container">
+        <h5 class="special-heading">Meet the Team</h5>
+        
+        <!-- Top Members Section -->
+        <div class="team-members top-members">
+          <div class="team-member">
+            <img src="./Images/founder.jpeg" alt="Ms. Narmeen Zakariya Bawany">
+            <p>Prof. Dr. Narmeen Zakaria Bawany</p>
+            <p>(Founder)</p>
+          </div>
+          <div class="team-member">
+            <img src="./Images/supervisor.jpeg" alt="Kanwal Zahoor">
+            <p>  Ms. Kanwal Zahoor  </p>
+            <p>(Supervisor)</p>
+          </div>
+          
+        </div>
+    
+        <!-- Remaining Team Members -->
+        <div class="team-members">
+          <div class="team-member">
+            <img src="./Images/marium salman.jpg.jpeg" alt="Marium Salman">
+            <p>Marium Salman</p>
+          </div>
+          <div class="team-member">
+            <img src="./Images/marwah tariq.jpg.jpeg" alt="Marwah Tariq">
+            <p>Marwah Tariq</p>
+          </div>
+          <div class="team-member">
+            <img src="./Images/nimish khan.jpg.jpeg" alt="Nimish Khan">
+            <p>Nimish Khan</p>
+          </div>
+          <div class="team-member">
+            <img src="./Images/masooma.jpg" alt="Masooma Raza">
+            <p>Syeda Masooma Raza</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+		<!-- Start Contact -->
+		<div class="contact" id="contact">
+			<div class="container">
+				<h2 class="special-heading">Contact</h2>
+				<p>Together, We Grow and Learn</p>
+				<div class="info">
+					<p class="label">Feel free to drop us a line at:</p>
+					<a
+						href="mailto:Nassaragency@mailTest.com?subject=Contact"
+						class="social"
+						>kanwalzahoor92@gmail.com </a
+					>
+          <a
+						href="mailto:Nassaragency@mailTest.com?subject=Contact"
+						class="social"
+						>
+             narmeenbawany@connectolead.org</a
+					>
+					<div class="label">
+						Find Us On Social Networks
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61565575201041" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/connectolead/?igsh=MTV1dzQ3eTFnZmFwaA%3D%3D#" target="_blank"><i class="fab fa-instagram"></i>
+            <a href="https://www.linkedin.com/company/connectolead/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Contact -->
+		<!-- Start Footer -->
+		
+    <div class="footer">&copy; 2024-2030 ConnecToLead | All Rights Reserved</div>
+		<!-- End Footer -->
+	</body>
+</html>

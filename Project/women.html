@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectoLead - Women Empowerment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #680f0f;
+        text-align: center;
+      }
+
+      header {
+        background-color: #680f0f;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centers the heading */
+        position: relative; /* So absolute children like logo are positioned relative to header */
+      }
+
+      .header-left {
+        position: absolute;
+        left: 40px; /* Pushes it to the left */
+        display: flex;
+        align-items: center;
+      }
+
+      .header-left img {
+        height: 70px; /* Adjust as needed */
+        margin-right: 10px;
+      }
+
+      .header-left a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      .header-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+      }
+
+      .hero {
+        position: relative;
+        background: url("./Images/women\ emp.jpg.webp") no-repeat center
+          center/cover;
+        height: 600px;
+        color: #023468;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+      }
+
+      .hero span {
+        position: relative;
+        z-index: 2;
+      }
+
+      #who-we-are {
+        padding: 40px 20px;
+        background: white;
+      }
+
+      #who-we-are h2 {
+        font-size: 32px;
+        color: #023468;
+      }
+
+      #who-we-are p {
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      #featured-services {
+        padding: 60px 20px;
+        background: #f9f9f9;
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .service-item {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        width: 260px;
+        transition: all 0.3s ease;
+      }
+
+      .service-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .icon {
+        font-size: 48px;
+        color: #023468;
+        margin-bottom: 15px;
+      }
+
+      .service-item h4 {
+        font-size: 20px;
+        color: #023468;
+        margin-bottom: 10px;
+      }
+
+      .service-item p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .section {
+        padding: 50px 20px;
+        background: white;
+        margin: 20px 0;
+        border-radius: 12px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .section h2 {
+        color: #023468;
+        margin-bottom: 10px;
+      }
+
+      .section a {
+        color: #680f0f;
+        text-decoration: underline;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      input,
+      textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 12px;
+        border: none;
+        background-color: #023468;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .footer {
+        background: #023468;
+        color: white;
+        padding: 20px;
+        font-size: 14px;
+      }
+      .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero {
+          font-size: 24px;
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="Images\logo0.png" alt="Logo" />
+      </div>
+      <h2 class="header-title">Women Empowerment</h2>
+    </header>
+    <a href="index.html" class="back-link"
+      ><i class="bi bi-arrow-left"></i> Back to Portal</a
+    >
+
+    <div class="hero">
+      <span>Empowering Women, Building Futures</span>
+    </div>
+
+    <div id="who-we-are" data-aos="fade-up">
+      <h2>About</h2>
+      <p>
+        We offer a comprehensive suite of resources designed to empower women in
+        both their personal and professional lives. Our platform provides access
+        to essential legal resources, health tracking tools, and wellness
+        guidance, helping women make informed decisions and prioritize their
+        well-being. Additionally, we offer mentorship opportunities that connect
+        women with experienced professionals who can offer support, advice, and
+        career development insights. By equipping women with the tools and
+        knowledge to navigate challenges, we help them build confidence, gain
+        control over their futures, and thrive in all aspects of their lives,
+        both personally and professionally.
+      </p>
+    </div>
+
+    <section id="featured-services">
+      <div class="services">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+          <h4>
+            <a href="womenMentor.php">Mentorship</a>
+          </h4>
+          <p>
+            Access one-on-one or group mentorship programs tailored to personal
+            and professional growth.
+          </p>
+        </div>
+
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon"><i class="bi bi-shield-check"></i></div>
+          <h4><a href="womenLegal.php">Legal Assistance</a></h4>
+          <p>
+            Reliable legal resources and expert consultations to help protect
+            and understand your rights.
+          </p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+          <h4><a href="womenHealth.php">Health Resources</a></h4>
+          <p>
+            Find verified information and connect with healthcare professionals
+            for your well-being.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mentorship" class="section" data-aos="fade-up">
+      <h2>Mentorship</h2>
+      <p>
+        Join our mentorship programs to connect with inspiring leaders and
+        professionals who can guide you in your journey of growth, confidence,
+        and independence.
+      </p>
+      <a href="womenMentor.php">Find a Mentor</a>
+    </section>
+
+    <section id="legal" class="section" data-aos="fade-up">
+      <h2>Legal Assistance</h2>
+      <p>
+        We provide access to legal experts who can assist with women’s rights,
+        workplace challenges, domestic issues, and more — in a confidential and
+        supportive manner.
+      </p>
+      <a href="womenLegal.php">Request Legal Help</a>
+    </section>
+
+    <section id="health" class="section" data-aos="fade-up">
+      <h2>Health Resources</h2>
+      <p>
+        Your well-being matters. Browse trusted health information and speak
+        with professionals about physical, mental, and emotional health topics.
+      </p>
+      <a href="womenHealth.php">Explore Health Topics</a>
+    </section>
+
+    <div class="footer">
+      &copy; 2025 ConnectoLead | Empowering Women Everywhere
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
+  </body>
+</html>

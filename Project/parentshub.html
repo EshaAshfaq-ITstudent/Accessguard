@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectoLead - Parents' Tech Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #680f0f;
+        text-align: center;
+      }
+      header {
+        background-color: #680f0f;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centers the heading */
+        position: relative; /* So absolute children like logo are positioned relative to header */
+      }
+
+      .header-left {
+        position: absolute;
+        left: 40px; /* Pushes it to the left */
+        display: flex;
+        align-items: center;
+      }
+
+      .header-left img {
+        height: 70px; /* Adjust as needed */
+        margin-right: 10px;
+      }
+
+      .header-left a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      .header-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+      }
+
+      .hero {
+        position: relative;
+        background: url("./Images/parents.jpg.webp") no-repeat center
+          center/cover;
+        height: 600px;
+        color: #023468;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+      }
+
+      .hero span {
+        position: relative;
+        z-index: 2;
+      }
+
+      #who-we-are {
+        padding: 40px 20px;
+        background: white;
+      }
+
+      #who-we-are h2 {
+        font-size: 32px;
+        color: #023468;
+      }
+
+      #who-we-are p {
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      #featured-services {
+        padding: 60px 20px;
+        background: #f9f9f9;
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .service-item {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        width: 260px;
+        transition: all 0.3s ease;
+      }
+
+      .service-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .icon {
+        font-size: 48px;
+        color: #023468;
+        margin-bottom: 15px;
+      }
+
+      .service-item h4 {
+        font-size: 20px;
+        color: #023468;
+        margin-bottom: 10px;
+      }
+
+      .service-item p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .section {
+        padding: 50px 20px;
+        background: white;
+        margin: 20px 0;
+        border-radius: 12px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .section h2 {
+        color: #023468;
+        margin-bottom: 10px;
+      }
+
+      .section a {
+        color: #023468;
+        text-decoration: underline;
+      }
+
+      .footer {
+        background: #023468;
+        color: white;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero {
+          font-size: 24px;
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="Images\logo0.png" alt="Logo" />
+      </div>
+      <h2 class="header-title">Parent's Tech Hub</h2>
+    </header>
+    <a href="index.html" class="back-link"
+      ><i class="bi bi-arrow-left"></i> Back to Portal</a
+    >
+
+    <div class="hero">
+      <span>Empowering Parents for Future</span>
+    </div>
+
+    <div id="who-we-are" data-aos="fade-up">
+      <h2>About</h2>
+      <p>
+        At Parents' Tech Hub, we empower parents with the digital skills needed
+        to navigate today’s tech-driven world. Our interactive courses,
+        workshops, and personalized learning plans help parents confidently use
+        technology for education, productivity, and daily life. Whether it's
+        mastering essential apps, staying informed about online safety, or
+        engaging in community discussions, we provide a supportive space where
+        parents can learn, grow, and connect. Join us to build digital
+        confidence and support your family’s tech journey!
+      </p>
+    </div>
+
+    <section id="featured-services">
+      <div class="services">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon"><i class="bi bi-laptop"></i></div>
+          <h4><a href="parents.TechWork.php">Tech Workshops</a></h4>
+          <p>
+            Hands-on sessions to help parents understand emerging technologies.
+          </p>
+        </div>
+
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon"><i class="bi bi-people-fill"></i></div>
+          <h4><a href="parents.CommFor.php">Community Forums</a></h4>
+          <p>A safe space for parents to share experiences and seek advice.</p>
+        </div>
+
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon"><i class="bi bi-journal-text"></i></div>
+          <h4><a href="parents.TechResour.php">Tech Resources</a></h4>
+          <p>
+            Curated guides, articles, and tutorials for managing tech in daily
+            life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshops" class="section" data-aos="fade-up">
+      <h2>Tech Workshops</h2>
+      <p>
+        Explore interactive sessions where experts guide you through current and
+        upcoming technologies used in schools, homes, and workplaces.
+      </p>
+      <a href="parents.TechWork.php">View Workshop Calendar</a>
+    </section>
+
+    <section id="forums" class="section" data-aos="fade-up">
+      <h2>Community Forums</h2>
+      <p>
+        Join parents like you in meaningful discussions. Get advice, share tech
+        tips, or talk about balancing screen time, devices, and safety.
+      </p>
+      <a href="parents.CommFor.php">Visit Forum</a>
+    </section>
+
+    <section id="resources" class="section" data-aos="fade-up">
+      <h2>Tech Resources</h2>
+      <p>
+        Our resource library includes step-by-step tutorials, safety checklists,
+        digital learning tools, and more — all parent-friendly and easy to
+        follow.
+      </p>
+      <a href="parents.TechResour.php">Browse Resources</a>
+    </section>
+
+    <div class="footer">
+      &copy; 2025 Parents' Tech Hub | Supporting Families in a Digital World
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
+  </body>
+</html>

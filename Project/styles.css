@@ -1,0 +1,177 @@
+body {
+  background: #800000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 750px; /* reduced from 1000px */
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Left image section */
+.image-container {
+  flex: 1;
+  background: #e6ecff;
+  padding: 15px; /* reduced */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Right form section */
+.container {
+  flex: 1;
+  padding: 30px 20px; /* reduced */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #800000;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  left: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #4169e1; /* Royal Blue */
+}
+
+.input-group input {
+  width: 100%;
+  max-width: 100%; /* ✅ ensure they don’t exceed container width */
+  padding: 10px 10px 10px 36px; /* slightly reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px; /* slightly smaller */
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* ensures padding is included in width */
+}
+
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.input-group input:focus {
+  border-color: #4169e1;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #800000; /* Maroon */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #5a0000; /* Darker maroon */
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+a {
+  color: #4169e1; /* Royal Blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.course-info {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.rating {
+  color: #f5a623;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+

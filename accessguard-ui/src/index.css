@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@450;520&display=swap');
+
+:root {
+  --font-sans: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --bg-deep: #050810;
+  --bg-elevated: rgba(17, 24, 48, 0.72);
+  --bg-panel: rgba(14, 20, 40, 0.65);
+  --border-subtle: rgba(120, 160, 230, 0.12);
+  --border-strong: rgba(140, 180, 255, 0.22);
+  --text-primary: #eef2ff;
+  --text-secondary: rgba(226, 232, 255, 0.72);
+  --text-muted: rgba(180, 198, 240, 0.55);
+
+  --accent: #42d9ff;
+  --accent-soft: rgba(66, 217, 255, 0.14);
+  --success: #3ee8a9;
+  --warning: #f5c842;
+  --danger: #ff6b87;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+
+  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.45), 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.28);
+
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-primary);
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(66, 120, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 20%, rgba(66, 217, 255, 0.08), transparent 42%),
+    radial-gradient(circle at 15% 75%, rgba(139, 92, 246, 0.09), transparent 45%),
+    linear-gradient(180deg, #060915 0%, #050810 48%, #04060d 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
